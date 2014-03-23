@@ -15,4 +15,4 @@ feature '#destroy', :js=>true do
 end
 
 # Scenario: User cannot delete another account
-# not implemented as there is no such beahviour in the system.
+# not implemented.

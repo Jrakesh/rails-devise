@@ -23,7 +23,7 @@ group :development, :test do
 end
 group :test do
   gem 'faker'
-  gem 'capybara'
+  gem 'capybara', github: 'jnicklas/capybara'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'

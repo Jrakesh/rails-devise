@@ -5,8 +5,7 @@ feature '#show' do
     user = FactoryGirl.create(:user)
     sign_in(user.email, user.password)
     expect(page).to have_content 'Signed in successfully.'
-    # Home page is treated as user profile page here.
-    expect(page).to have_content 'Home'
-    expect(page).to have_content 'user@example.com'
+    click_link user.email
+    expect(page).to have_content user.email
   end
 end

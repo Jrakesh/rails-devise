@@ -6,6 +6,6 @@ feature '#index' do
     sign_in(user.email, user.password)
     expect(page).to have_content 'Signed in successfully.'  
     visit '/users'  
-    expect(page).to have_content 'user@example.com'
+    expect(page).to have_content user.email
   end
 end
