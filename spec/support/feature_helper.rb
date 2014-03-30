@@ -14,5 +14,3 @@
       fill_in 'Password confirmation', :with => confirmpass
     click_button 'Sign up'
   end
-
-
